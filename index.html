@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>\n  <title>NAME – Wedding Photography Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- NAME -->\n
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:#B84E5C; /* deep rose */
+      --accent:#F2C14E;  /* warm gold */
+      --bg:#FAF9F6;    /* ivory */
+      --text:#2B2B2B;
+      --font-display: 'Playfair Display', serif;
+      --font-body: 'Lato', sans-serif;
+    }
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;}
+    header {display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:var(--primary);color:#fff;}
+    header nav a {color:#fff;margin-left:1.5rem;text-decoration:none;font-weight:600;}
+    h1, h2, h3 {font-family:var(--font-display);}
+    .hero {display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:4rem 2rem;gap:2rem;}
+    .hero h1 {font-size:clamp(2.5rem,8vw,5rem);color:var(--primary);}
+    .hero p {font-size:1.25rem;margin:1rem 0;}
+    .hero button {background:var(--accent);border:none;color:#fff;padding:0.75rem 1.5rem;font-size:1rem;cursor:pointer;transition:background .3s;}
+    .hero button:hover {background:#e5a53c;}
+    .hero svg {width:100%;height:auto;max-width:400px;fill:var(--primary);}
+    .facts {display:flex;justify-content:space-around;background:var(--accent);color:#fff;padding:1rem 0;}
+    .facts div {max-width:30%;text-align:center;}
+    section {padding:3rem 2rem;max-width:1200px;margin:auto;}
+    #offer {background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+    .gallery article {background:#fafafa;padding:1rem;border-radius:6px;}
+    .gallery svg {width:48px;height:48px;fill:var(--primary);margin-bottom:0.5rem;}
+    .testimonials, .contact {background:#fff;margin-top:2rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);padding:2rem;}
+    form {display:flex;flex-direction:column;}
+    input, textarea {margin-bottom:1rem;padding:0.75rem;border:1px solid #ccc;border-radius:4px;}
+    button[type="submit"] {background:var(--primary);color:#fff;border:none;padding:0.75rem;cursor:pointer;}
+    footer {text-align:center;padding:2rem;background:#222;color:#ddd;}
+    @media (max-width:768px) {
+      .hero {grid-template-columns:1fr; text-align:center;}
+      .facts {flex-direction:column;}
+      .facts div {max-width:80%;margin-bottom:0.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Everlasting Moments</strong></div>
+    <nav>
+      <a href="#offer">Portfolio</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Everlasting Moments</h1>
+      <p>Capturing love stories with timeless elegance.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Book a Consultation</button>
+    </div>
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="20" cy="32" r="12"/>
+      <circle cx="44" cy="32" r="12"/>
+    </svg>
+  </section>
+
+  <section class="facts">
+    <div><strong>10+</strong><br/>Years of Experience</div>
+    <div><strong>200+</strong><br/>Weddings Captured</div>
+    <div><strong>5 Awards</strong><br/>Industry Recognized</div>
+  </section>
+
+  <section id="offer">
+    <h2>Portfolio</h2>
+    <p>Every couple has a unique story. Here are six signature styles we specialize in.</p>
+    <div class="gallery">
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+        <h3>Classic Romance</h3>
+        <p>Soft lighting, timeless poses – the look that never goes out of style.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+        <h3>Modern Minimalist</h3>
+        <p>Clean lines, bold compositions, a contemporary aesthetic.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M2 12l10 10L22 2"/></svg>
+        <h3>Storytelling Documentary</h3>
+        <p>Candid moments that tell the whole day’s narrative.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        <h3>Vintage Film</h3>
+        <p>Muted tones, grain, and a nostalgic feel for retro lovers.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2"/></svg>
+        <h3>Destination Elegance</h3>
+        <p>Exotic locales, dramatic backdrops – your love in far‑away places.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><polygon points="12,2 22,22 2,22"/></svg>
+        <h3>Night Light</h3>
+        <p>Starry skies, candlelit receptions, and magical low‑light moments.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="story" class="testimonials">
+    <h2>Our Story</h2>
+    <p>Our commitment extends beyond the lens; we work closely with planners, venues, and vendors to ensure every moment is captured seamlessly, delivering a cohesive visual narrative that reflects your love story.</p>
+
+    <h3>What Couples Say</h3>
+    <blockquote>“Alex captured our day in a way we never imagined – every laugh, tear, and glance feels alive.” – Maya &amp; Luis</blockquote>
+    <blockquote>“The photos are pure art. We still get compliments from friends who think we hired a studio.” – Priya &amp; Sam</blockquote>
+    <blockquote>“From the first meeting to the final album, the experience was seamless and joyful.” – Emily &amp; Jake</blockquote>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to make your day unforgettable? Reach out and we’ll schedule a free consultation.</p>
+    <form action="mailto:alex@everlastingmoments.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="date" placeholder="Wedding Date (optional)" />
+      <textarea name="message" rows="4" placeholder="Tell us a bit about your vision..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id=\"pricing\" class=\"contact\">\n    <h2>Pricing Overview</h2>\n    <p>Our packages start at $2,500 for a full‑day coverage, including a private online gallery and a 30‑page printed album. Add‑ons such as drone footage (+$500) or a second photographer (+$700) are available.</p>\n    <p>Custom quotes are provided for destination weddings and multi‑day events.</p>\n  </section>\n  <section id=\"faq\" class=\"contact\">
+    <h2>Frequently Asked Questions</h2>
+    <h3>What is your photography style?</h3>
+    <p>We blend classic romance with modern minimalism, tailoring each image to the couple’s personality while maintaining a timeless aesthetic.</p>
+    <h3>How far in advance should we book?</h3>
+    <p>We recommend securing your date at least six months ahead to ensure availability and allow ample planning time for scouting locations.</p>
+    <h3>Do you travel for destination weddings?</h3>
+    <p>Absolutely. Our team is equipped to travel worldwide, handling logistics so you can focus on your celebration.</p>
+    <h3>What is included in the packages?</h3>
+    <p>All packages feature a full‑day coverage, a private online gallery, a beautifully printed album, and optional add‑ons such as drone footage or a second photographer.</p>
+    <h3>How long does editing take?</h3>
+    <p>Our post‑production process typically takes 4‑6 weeks, delivering high‑resolution files ready for printing or sharing.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Everlasting Moments – All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
